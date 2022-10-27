@@ -1,20 +1,23 @@
-import {SimpleLink, SubMenuCollection} from "../index.js";
-import React, {useState} from "react";
+import React from "react";
 import ReactDOM from "react-dom/client";
-import {settings} from "./settings";
-import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import {SimpleLink} from "../index";
 
 const App = (props: any) => {
 
     return(
-        <BrowserRouter>
-            <Routes>
-                <Route index element={<SimpleLink to="#" isOpenNewTab>hello</SimpleLink>} />
-            </Routes>
-            
-        </BrowserRouter>
+        <React.StrictMode>
+            <BrowserRouter>
+                <Routes>
+                    <Route path="test" index element={
+                        <SimpleLink>home</SimpleLink>
+                    } />
+                </Routes>
+            </BrowserRouter>
+        </React.StrictMode>
     );
 };
+
 
 const target = document.querySelector("#root");
 const root = ReactDOM.createRoot(target);

@@ -1,4 +1,4 @@
-import { Settings } from "../index.js";
+import { Settings } from "../types/sidebar";
 
 export const settings: Settings = {
 
