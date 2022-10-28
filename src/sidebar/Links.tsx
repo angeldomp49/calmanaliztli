@@ -1,7 +1,7 @@
 import { NavLink } from 'react-router-dom';
 import React, {memo} from 'react';
 
-export const SimpleLink = ({isOpenNewTab = false, to = "#", iconClass = "", children , ...additionalProps}: any) =>
+export const SimpleLink = memo(({isOpenNewTab = false, to = "#", iconClass = "", children , ...additionalProps}: any) =>
 	
 	
 	isOpenNewTab.isOpenNewTab ?
@@ -14,7 +14,7 @@ export const SimpleLink = ({isOpenNewTab = false, to = "#", iconClass = "", chil
 		<NormalLink
 			{...additionalProps}
 			>{children}</NormalLink>
-;
+);
 
 const NewTabLink = (props: any) =>
 	

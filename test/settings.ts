@@ -2,50 +2,42 @@ import { Settings } from "../types/sidebar";
 
 export const settings: Settings = {
 
-    sidebarItems: [
+    sidebaritems: [
         {
             title: "home",
-            hasMenu: true,
-            iconClass: "",
+            hasmenu: true,
+            iconclass: "",
             permission: "home-menu",
-            menuItems: [
+            menuitems: [
                 {
                     title: "products",
-                    hasMenu: false,
-                    iconClass: "fa fa-plus-square",
+                    hasmenu: false,
+                    iconclass: "fa fa-plus-square",
                     permission: "products-page"
                 },
                 {
                     title: "category",
-                    hasMenu: true,
-                    iconClass: "fa fa-plus-square",
+                    hasmenu: true,
+                    iconclass: "fa fa-plus-square",
                     permission: "category-menu",
-                    menuItems: [
+                    menuitems: [
                         {
                             title: "spring",
-                            hasMenu: false,
-                            iconClass: "fa fa-plus-square",
                             permission: "category-spring-page"
                         },
                         {
                             title: "summer",
-                            hasMenu: false,
-                            iconClass: "fa fa-plus-square",
                             permission: "category-summer-page"
                         },
                         {
                             title: "winter",
-                            hasMenu: false,
-                            iconClass: "fa fa-plus-square",
                             permission: "category-winter-page"
                         },
                     ]
                 },
                 {
                     title: "cart",
-                    hasMenu: false,
-                    isOpenNewTab: true,
-                    iconClass: "fa fa-plus-square",
+                    isopennewtab: true,
                     permission: "cart-page"
                 },
             ]

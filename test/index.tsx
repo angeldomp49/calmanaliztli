@@ -1,7 +1,13 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import {SimpleLink} from "../index";
+import { DropdownButtonTest2, DropdownButtonTestLinks } from "./src/DropdownButtonTest";
+import {LinksTest} from "./src/LinksTest";
+import { SidebarTest } from "./src/SidebarTest";
+
+import '../node_modules/react-perfect-scrollbar/dist/css/styles.css';
+import '../node_modules/bootstrap/dist/css/bootstrap.css';
+import '../src/assets/css/sass/themes/gogo.light.orangecarrot.scss';
 
 const App = (props: any) => {
 
@@ -10,7 +16,12 @@ const App = (props: any) => {
             <BrowserRouter>
                 <Routes>
                     <Route path="test" index element={
-                        <SimpleLink>home</SimpleLink>
+                        <>
+                            <LinksTest />
+                            <DropdownButtonTestLinks />
+                            <DropdownButtonTest2 />
+                            <SidebarTest />
+                        </>
                     } />
                 </Routes>
             </BrowserRouter>

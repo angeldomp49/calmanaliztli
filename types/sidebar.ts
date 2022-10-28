@@ -1,14 +1,14 @@
 
 export type Settings = {
-    sidebarItems: SidebarItem[];
+    sidebaritems: SidebarItem[];
 };
 
 export type SidebarItem = {
 	title?: string;
 	to?: string;
-	hasMenu: boolean;
-	isOpenNewTab?: boolean;
-	iconClass?: string;
+	hasmenu?: boolean;
+	isopennewtab?: boolean;
+	iconclass?: string;
 	permission: string;
-	menuItems?: SidebarItem[];
+	menuitems?: SidebarItem[];
 }
