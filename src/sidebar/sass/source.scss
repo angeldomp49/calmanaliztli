@@ -1,0 +1,16 @@
+
+
+$prefix: "http://localhost:8000/src";
+
+$ballon-lg: $prefix + '/assets/img/login/balloon-lg.jpg';
+$ballon: $prefix + '/assets/img/login/balloon.jpg';
+
+@import "./themes/gogo.light.purplemonster.scss";
+
+a {
+    text-decoration: none;
+
+    &:hover{
+        text-decoration: underline;
+    }
+}

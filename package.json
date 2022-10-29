@@ -1,17 +1,18 @@
 {
   "name": "@makechtec/calmanaliztli",
-  "version": "1.6.1",
-  "description": "",
-  "main": "index.js",
+  "version": "1.0.0",
+  "description": "react components",
+  "main": "index.tsx",
   "scripts": {
     "test": "npm t",
-    "compile": "webpack"
+    "compile": "webpack",
+    "mix-styles": "sass src/sidebar/sass/source.scss src/sidebar/css/bundle.css"
   },
   "author": "MakechTec",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/angeldomp49/cuauitl"
+    "url": "https://github.com/angeldomp49/calmanaliztli"
   },
   "devDependencies": {
     "@babel/plugin-proposal-class-properties": "^7.18.6",
@@ -24,6 +25,9 @@
     "@types/react": "^18.0.23",
     "babel-loader": "^8.2.5",
     "bundle-declarations-webpack-plugin": "^3.1.1",
+    "sass": "^1.55.0",
+    "sass-loader": "^13.1.0",
+    "style-loader": "^3.3.1",
     "css-loader": "^6.7.1",
     "jsdom": "^20.0.1",
     "ts-loader": "^9.4.1",
@@ -38,9 +42,6 @@
     "react-dom": "^18.2.0",
     "react-perfect-scrollbar": "^1.5.8",
     "react-router-dom": "^6.4.2",
-    "reactstrap": "^9.1.4",
-    "sass": "^1.55.0",
-    "sass-loader": "^13.1.0",
-    "style-loader": "^3.3.1"
+    "reactstrap": "^9.1.4"
   }
 }

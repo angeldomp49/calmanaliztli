@@ -12,26 +12,28 @@ export const SimpleLink = memo(({isOpenNewTab = false, to = "#", iconClass = "",
 			>{children}</NewTabLink> :
 
 		<NormalLink
+			to={to}
+			iconClass={iconClass}
 			{...additionalProps}
 			>{children}</NormalLink>
 );
 
-const NewTabLink = (props: any) =>
+const NewTabLink = ({to, iconClass, children, ...props}: any) =>
 	
 	
-	<a href={props.to}
+	<a href={to}
 		rel="noopener noreferrer"
 		target="_blank"
 		{...props} >
-		<i className={props.iconClass} />
-		{' '}{props.children}
+		<i className={iconClass} />
+		{' '}{children}
 	</a>;
 
-const NormalLink = (props: any) =>
+const NormalLink = ({to, iconClass, children, ...props}: any) =>
 	
 	<NavLink
-		to={props.to}
+		to={to}
 		{...props} >
-		<i className={props.iconClass}></i>
-		{' '}{props.children}
+		<i className={iconClass}></i>
+		{' '}{children}
 	</NavLink>;

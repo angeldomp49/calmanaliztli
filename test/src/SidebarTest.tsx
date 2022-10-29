@@ -10,15 +10,19 @@ export const SidebarTest = (props:any) => {
             {
                 title: "home",
                 hasmenu: true,
+                iconclass: "iconsminds-shop-4",
                 permission: "home-menu",
                 menuitems: [
                     {
                         title: "products",
+                        to: "/test",
+                        iconclass: "simple-icon-pie-chart",
                         permission: "products-page"
                     },
                     {
                         title: "category",
                         hasmenu: true,
+                        to: "#",
                         permission: "category-menu",
                         menuitems: [
                             {
@@ -37,41 +41,44 @@ export const SidebarTest = (props:any) => {
                     },
                     {
                         title: "cart",
+                        to: "/cart",
+                        iconclass: "simple-icon-briefcase",
                         isopennewtab: true,
                         permission: "cart-page"
                     },
                 ]
             },
             {
-                title: "home",
+                title: "dashboards",
                 hasmenu: true,
+                iconclass: "iconsminds-digital-drawing",
                 permission: "home-menu",
                 menuitems: [
                     {
-                        title: "products",
+                        title: "crypto",
                         permission: "products-page"
                     },
                     {
-                        title: "category",
+                        title: "currency",
                         hasmenu: true,
                         permission: "category-menu",
                         menuitems: [
                             {
-                                title: "spring",
+                                title: "blockchain",
                                 permission: "category-spring-page"
                             },
                             {
-                                title: "summer",
+                                title: "bitcoin",
                                 permission: "category-summer-page"
                             },
                             {
-                                title: "winter",
+                                title: "etherium",
                                 permission: "category-winter-page"
                             },
                         ]
                     },
                     {
-                        title: "cart",
+                        title: "more",
                         isopennewtab: true,
                         permission: "cart-page"
                     },

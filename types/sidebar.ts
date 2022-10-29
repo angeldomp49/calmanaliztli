@@ -1,3 +1,4 @@
+import React from "react";
 
 export type Settings = {
     sidebaritems: SidebarItem[];
