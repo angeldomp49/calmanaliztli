@@ -1,8 +1,3 @@
-import React from "react";
-
-export type Settings = {
-    sidebaritems: SidebarItem[];
-};
 
 export type SidebarItem = {
 	title?: string;

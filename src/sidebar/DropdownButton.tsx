@@ -4,7 +4,7 @@ import {NavItem, Nav, Collapse} from "reactstrap";
 import {Id} from "@makechtec/randomkey";
 import { useLocation } from "react-router-dom";
 
-export const DropdownButton = memo(({ hasSubItems = false, links = [], children, to, ...props }: any) => {
+export const DropdownButton = memo(({ hasSubItems = false, links = [], children, to="#", ...props }: any) => {
 
     const hasSubItemsClass = hasSubItems ? 'has-sub-item' : "";
 
@@ -18,7 +18,6 @@ export const DropdownButton = memo(({ hasSubItems = false, links = [], children,
     return(
         <NavItem
             className={hasSubItemsClass + `${ isActive ? 'active' : '' }`}
-
         >
             {
                 hasSubItems ? 

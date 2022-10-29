@@ -1,11 +1,11 @@
-import React from 'react';
+import React, { memo } from 'react';
 import PerfectScrollbar from 'react-perfect-scrollbar';
 import {DropdownButton} from "./DropdownButton";
 import {Nav, NavItem} from "reactstrap";
 import {Id} from "@makechtec/randomkey";
 import { SimpleLink } from './Links';
 
-export const Sidebar = ({ menus=[] }: any ) => {
+export const Sidebar = memo(({ menus=[] }: any ) => {
 
 	const [activeMenu, setActiveMenu] = React.useState(0);
 
@@ -20,7 +20,7 @@ export const Sidebar = ({ menus=[] }: any ) => {
 				activeMenu={activeMenu} />
         </div>
     );
-}
+});
 
 const MainMenu = ({ menus, activeMenu, setActiveMenu }:any) => 
 
