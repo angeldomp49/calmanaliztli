@@ -3,7 +3,7 @@ import PerfectScrollbar from 'react-perfect-scrollbar';
 import {DropdownButton} from "./DropdownButton";
 import {Nav, NavItem} from "reactstrap";
 import {Id} from "@makechtec/randomkey";
-import { SimpleLink } from './Links';
+import { SimpleLink } from '../SimpleLink';
 
 export const Sidebar = memo(({ menus=[] }: any ) => {
 
@@ -94,3 +94,6 @@ const SidebarMenu = ({dropdowns=[], isActive=false, ...props}: any) =>
 				)
 			}
 		</Nav>;
+
+export {DropdownButton};
+export {SimpleLink};

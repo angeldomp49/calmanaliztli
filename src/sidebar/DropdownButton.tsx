@@ -1,4 +1,4 @@
-import { SimpleLink } from "./Links";
+import { SimpleLink } from "../SimpleLink";
 import React, {memo} from "react";
 import {NavItem, Nav, Collapse} from "reactstrap";
 import {Id} from "@makechtec/randomkey";

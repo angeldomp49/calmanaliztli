@@ -1,6 +1,6 @@
 {
   "name": "@makechtec/calmanaliztli",
-  "version": "1.0.0",
+  "version": "1.2.0",
   "description": "react components",
   "main": "index.tsx",
   "scripts": {
@@ -25,11 +25,11 @@
     "@types/react": "^18.0.23",
     "babel-loader": "^8.2.5",
     "bundle-declarations-webpack-plugin": "^3.1.1",
+    "css-loader": "^6.7.1",
+    "jsdom": "^20.0.1",
     "sass": "^1.55.0",
     "sass-loader": "^13.1.0",
     "style-loader": "^3.3.1",
-    "css-loader": "^6.7.1",
-    "jsdom": "^20.0.1",
     "ts-loader": "^9.4.1",
     "typescript": "^4.8.4",
     "webpack": "^5.74.0",
@@ -38,6 +38,7 @@
   "dependencies": {
     "@makechtec/randomkey": "^2.0.2",
     "bootstrap": "^5.2.2",
+    "rc-switch": "^4.0.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-perfect-scrollbar": "^1.5.8",
